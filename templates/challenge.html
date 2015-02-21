@@ -29,7 +29,7 @@
 			{{ challenge.sample_output_as_html()|safe }}
 		</div>
 	</div>
-	<p id="tip">Each test case (separated by "-----") is piped into a different instance of your code.</p>
+	<p id="tip">Each test case is run separately (there is no need to parse the "-----"s)</p>
 </section>
 {% if error %}
 <section>
