@@ -17,12 +17,16 @@
 	},
 	"official": {
 		"test_cases": [
-			"official",
-			"It can get pretty crazy in here!"
+			"99",
+			"8001",
+            "9999",
+            "99999"
 		],
 		"solutions": [
-			"official",
-			"It can get pretty crazy in here!"
+			"23",
+			"787",
+            "956",
+            "7007"
 		]
 	}
 }
