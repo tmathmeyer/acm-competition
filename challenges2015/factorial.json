@@ -3,10 +3,10 @@
 	"tag": "factorial",
 	"weights": {
 		"dev": 2.0,
-		"spd": 5.0,
-		"mem": 5.0
+		"spd": 2.0,
+		"mem": 2.0
 	},
-	"description": "<p>Suppose we have a function f such that f(x) is equal to the sum of the digits in x!. for each input Z, find the smallest number Y such that f(Y) = Z. For example, for a Z such as 9, we would list factorials:<br>f(1) =  1<br />f(2) = 2<br />f(3) = 6<br />f(4) = 2+4 = 6</br>f(5) = 1+2+0 = <br />f(6) = 7+2+0 = 9<br /><br />The smallest number whos factorial digits sum to 9 is therefore 6. For this problem, you may assume that all given Y are less than 1,000,000</p>",
+	"description": "<p>Suppose we have a function f such that f(x) is equal to the sum of the digits in x!. for each input Z, find the smallest number Y such that f(Y) = Z. For example, for a Z such as 9, we would list factorials:<br>f(1) =  1<br />f(2) = 2<br />f(3) = 6<br />f(4) = 2+4 = 6</br>f(5) = 1+2+0 = <br />f(6) = 7+2+0 = 9<br /><br />The smallest number whos factorial digits sum to 9 is therefore 6. For this problem, you may assume that all given Y are less than 100</p>",
 	"sample": {
 		"test_cases": [
 			"9"
@@ -18,15 +18,13 @@
 	"official": {
 		"test_cases": [
 			"99",
-			"8001",
-            "9999",
-            "99999"
+			"81",
+			"72"
 		],
 		"solutions": [
 			"23",
-			"787",
-            "956",
-            "7007"
+			"24",
+			"22"
 		]
 	}
 }
