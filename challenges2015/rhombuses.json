@@ -2,9 +2,9 @@
     "name": "Rhombuses",
     "tag": "rhombuses",
     "weights": {
-	"dev": 2.0,
+	"dev": 5.0,
 	"spd": 1.0,
-	"mem": 5.0
+	"mem": 1.0
     },
     "description": "<p> You are given a number N of points in a 2d plane. Find how many rhombuses can be found with them. (A rhombus is a quadrilateral with four sides of equal lengths)</p><h2> Input from stdin: </h2> <p> one line containing the number N </p> <p>followed by N pairs of integers consisting in the coordinates X and Y of the points</p><h2> Output into stdout: </h2> <p> One number representing the number of rhombuses that can be created </p><h2> Restrictions </h2> <p> N < 50 ; -5000 < X, Y < 5000 </p>",
     "sample": {

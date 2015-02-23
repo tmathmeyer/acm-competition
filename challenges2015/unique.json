@@ -2,9 +2,9 @@
 	"name": "Unique Numbers",
 	"tag": "unique",
 	"weights": {
-		"dev": 1.0,
-		"spd": 2.0,
-		"mem": 2.0
+		"dev": 3.0,
+		"spd": 2.5,
+		"mem": 3.0
 	},
 	"description": "<p>You will be given an arbitrarily long list of numbers between 0 and 2^31. In this list, every in this list exists in this list twice, except for one number. Print that number to stdout. The length of the list of numbers will be less than 1,000,000<p>",
 	"sample": {

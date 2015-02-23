@@ -16,7 +16,9 @@ ENABLED_CHALLENGES = [
     'echo',
     'unique',
     'factorial',
-    'coins'
+    'coins',
+    'rhombuses',
+    'decrypt'
 ]
 
 

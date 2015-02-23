@@ -1,0 +1,28 @@
+{
+	"name": "Coin Partitions (similar to Project Euler #78)",
+	"tag": "coins",
+	"weights": {
+		"dev": 3.0,
+		"spd": 5.0,
+		"mem": 1.0
+	},
+	"description": "<p>let P(n) be a function that represents the number of ways that n coins can be partitioned. For example, 5 coins can be partitioned in seven different ways:<br />ooooo<br />oooo o<br />ooo oo<br />ooo o o<br />oo oo o<br />oo o o o<br />o o o o o<br /><br />For each input n, print p(n) to stdout. Each n will be less than 1,000,000</p>",
+	"sample": {
+		"test_cases": [
+			"5"
+		],
+		"solutions": [
+			"7"
+		]
+	},
+	"official": {
+		"test_cases": [
+			"official",
+			"It can get pretty crazy in here!"
+		],
+		"solutions": [
+			"official",
+			"It can get pretty crazy in here!"
+		]
+	}
+}
