@@ -6,13 +6,17 @@
 		"spd": 5.0,
 		"mem": 5.0
 	},
-	"description": "<p>let P(n) be a function that represents the number of ways that n coins can be partitioned. For example, 5 coins can be partitioned in seven different ways:<br />ooooo<br />oooo o<br />ooo oo<br />ooo o o<br />oo oo o<br />oo o o o<br />o o o o o<br /><br />For each input n, print p(n) to stdout. Each n will be between 1000 and 5000</p>",
+	"description": "<p>let P(n) be a function that represents the number of ways that n coins can be partitioned. For example, 5 coins can be partitioned in seven different ways:<br />ooooo<br />oooo o<br />ooo oo<br />ooo o o<br />oo oo o<br />oo o o o<br />o o o o o<br /><br /> You will be given an input N for which you must print p(N). Each N given will be between 1000 and 5000</p>",
 	"sample": {
 		"test_cases": [
-			"5"
+			"5",
+			"6",
+			"66"
 		],
 		"solutions": [
 			"7"
+			"11",
+			"2323520"
 		]
 	},
 	"official": {

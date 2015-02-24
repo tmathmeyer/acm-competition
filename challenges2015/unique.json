@@ -6,7 +6,7 @@
 		"spd": 2.5,
 		"mem": 3.0
 	},
-	"description": "<p>You will be given an arbitrarily long list of numbers between 0 and 2^31. In this list, every in this list exists in this list twice, except for one number. Print that number to stdout. The length of the list of numbers will be less than 1,000,000<p>",
+	"description": "<p>You will be given an arbitrarily long list of random numbers. Every number that occurs in this list occurs exactly N times, where N is an even number. There is one number however that is different. It occurs an ODD number of times. Find and print that number. The length of the list of numbers will be less than 10,000<p>",
 	"sample": {
 		"test_cases": [
 			"1 2 3 4 5 6 5 4 3 2 1",
