@@ -6,29 +6,33 @@
 	"spd": 5.0,
 	"mem": 4.0
     },
-    "description": "<p> The NSA intercepted an encrypted message form ISIS consisting in their bombing targets for the next year when they will posess nuclear bombs. However, in order to decrypt the message, they need to find out the encryption key. That's why they hired you to compute the key. </p> <br> <p> The NSA knows that the key can be computed form an array of N 32-bit integers given the following information: </p> <ul> <li> The key is 192 bits long </li> <li> The key is formed from 6 numbers merged together in appearance order in the array that have the condition that the sum of them is 0. More formally: Key = xi || xj || xk || xl || xm || xn , where i < j < k < l < m < n and xi + xj + xk + xl + xm + xn = 0  </li> <li> It is guaranteed that there are only 6 numbers in the array that sum up to 0 </li> </ul> <p> The operator '||' is defined in the following way: c = a || b, where a and b are 32 bits numbers => first 32 bits of c is the number a and the last 32 bits of c is b. </p> <p> Your task is to find the key and print it as a sequence of bits starting with the Least significant bit (The least significant bit is the units bit. As an example, the number 4 = 100b has the least significant bit 0). </p> Please approach this task in order to save the lives of milions of people. <p> </p><h2> Input from stdin: </h2> <p> one line containing the integer N</p> <p> Next line contains N integegers that form the array </p><h2> Output into stdout: </h2> <p> A string of 192 1s and 0s that represent the key </p><h2> Restrictions </h2> <p> N < 70; -2^31 < integers in the array < 2^31 - 1;</p>",
+    "description": "<p> The NSA intercepted an encrypted message form ISIS consisting in their bombing targets for the next year when they will posess nuclear bombs. However, in order to decrypt the message, they need to find out the encryption key. That's why they hired you to compute the key. </p> <br> <p> The NSA knows that the key can be computed form an array of N 32-bit integers given the following information: </p> <ul> <li> The key is 192 bits long </li> <li> The key is formed from 6 numbers merged together in appearance order in the array that have the condition that the sum of them is 0. More formally: Key = xi || xj || xk || xl || xm || xn , where i < j < k < l < m < n and xi + xj + xk + xl + xm + xn = 0  </li> <li> It is guaranteed that there are only 6 numbers in the array that sum up to 0 </li> <li> There will never be a case when the key is impossible to find</li> </ul> <p> The operator '||' is defined in the following way: c = a || b, where a and b are 32 bits numbers => first 32 bits of c is the number a and the last 32 bits of c is b. </p> <p> Your task is to find the key and print it as a sequence of bits starting with the Least significant bit (The least significant bit is the units bit. As an example, the number 4 = 100b has the least significant bit 0). </p> Please approach this task in order to save the lives of milions of people. <p> </p><h2> Input from stdin: </h2> <p> one line containing the integer N followed by N integegers that form the array </p><h2> Output into stdout: </h2> <p> A string of 192 1s and 0s that represent the key </p><h2> Restrictions </h2> <p> N < 70; -2^31 < integers in the array < 2^31 - 1;</p>",
     "sample": {
 	"test_cases": [
-	    "10 4 2 5 6 -7 -1 -5 0 0 0",
+	    "10 4 2 50 6 -6 -1 -5 123 321 432",
 	    "8 1 -1 4 -2 18 -3 1 -9"
 	],
 	"solutions": [
-	    "010000000000000000000000000000001010000000000000000000000000000001100000000000000000000000000000100111111111111111111111111111111111111111111111111111111111111111011111111111111111111111111111",
+	    "001000000000000000000000000000000100000000000000000000000000000001100000000000000000000000000000010111111111111111111111111111111111111111111111111111111111111111011111111111111111111111111111",
 	    "100000000000000000000000000000001111111111111111111111111111111100100000000000000000000000000000011111111111111111111111111111111011111111111111111111111111111110000000000000000000000000000000"
 	]
     },
     "official": {
 	"test_cases": [
-	    "9 0 0 1 0 2 0 0 1 1 1 2 1 0 2 1 2 2 2",
-	    "6 -1 0 0 1 1 0 0 -1 0 0 1 1",
-            "TODO",
-            "TODO"
+	    "10 -2345 1 2 3 4 2344 -5000 4998 10 10",
+	    "50 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 9999 -9099 19999 -19099 -900 -900",
+            "70 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 92456499 -92456499 19876499 -19876499 -1 0",
+	    "70 1 2 -92456499 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 -19876499 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 92456499 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 19876499 -1 0",
+	    "50 0 0 0 0 0 0 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50",
+            "70 -52286067 238351421 -188179619 198023365 268510572 -109469454 229839968 286729090 -998949 287022622 -362573919 468201420 370651199 374109513 -277044136 -492274120 -61680151 472792933 437820320 63632907 -279120390 -382641815 -450972651 -338087227 -93804938 -430106779 -478189562 -4188524 159905350 -430840727 71248284 218007098 127662171 -28587489 255877172 -192647270 479162075 109807564 -256235336 -153112050 375157692 -47190281 -16119157 -435242888 246056002 99189359 -475264070 -434589783 -76152989 -313564644 -466634103 431919745 -323083356 -386353162 -112082408 -381899901 -428052426 -15 10 5 -310417043 102509798 289757959 158573384 12148250 61180574 -486270406 472536129 -100000000 -2509798"
 	],
 	"solutions": [
-	    "6",
-	    "2",
-            "TODO",
-            "TODO"
+	    "111010110110111111111111111111111000000000000000000000000000000001000000000000000000000000000000000101001001000000000000000000000001111000110111111111111111111101100001110010000000000000000000",
+	    "111100001110010000000000000000001010111000111011111111111111111111111000011100100000000000000000101001101010110111111111111111110011111000111111111111111111111100111110001111111111111111111111",
+            "100000000000000000000000000000001100110001100011010000011010000010110011100111001011111001011111110010010101001011110100100000001011011010101101000010110111111111111111111111111111111111111111",
+            "100000000000000000000000000000001011001110011100101111100101111110110110101011010000101101111111110011000110001101000001101000001100100101010010111101001000000011111111111111111111111111111111",
+            "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "100011111111111111111111111111110101000000000000000000000000000010100000000000000000000000000000011001110011010000111000011000000000000011111000010100000101111101011000001011011001101111111111"
 	]
     }
 }

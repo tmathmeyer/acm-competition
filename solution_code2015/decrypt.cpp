@@ -12,7 +12,7 @@ typedef struct{
   int pos3;
 } hashstruct;
 
-vector<int> array;
+vector<int> nums;
 vector<int> solutionArr;
 map<long long, vector<hashstruct> > hashM;
 
@@ -57,7 +57,7 @@ void printBits(int x) {
 
 void printSolution() {
   for(int i = 0; i < K; ++i) {
-    printBits(array[solutionArr[i]]);
+    printBits(nums[solutionArr[i]]);
   }
   cout << '\n';
 }
@@ -75,13 +75,13 @@ int main() {
     
   for(int i = 0; i < N; ++i) {
     int x; cin >> x;
-    array.push_back(x);
+    nums.push_back(x);
   }
 
   for(int i = 0; i < N-2; ++i) {
     for(int j = i + 1; j < N-1; ++j) {
       for(int k = j + 1; k < N; ++k) {
-	long long sum = (long long) array[i] + array[j] + array[k];
+	long long sum = (long long) nums[i] + nums[j] + nums[k];
 	hashstruct pos; pos.pos1 = i; pos.pos2 = j; pos.pos3 = k;
 	if(hashM.find(sum) != hashM.end()) {
 	  hashM[sum].push_back(pos);
@@ -97,10 +97,10 @@ int main() {
   for(int i = 0; i < N-2; ++i) {
     for(int j = i + 1; j < N-1; ++j) {
       for(int k = j + 1; k < N; ++k) {
-	long long sum = (long long) array[i] + array[j] + array[k];
+	long long sum = (long long) nums[i] + nums[j] + nums[k];
 	hashstruct pos; pos.pos1 = i; pos.pos2 = j; pos.pos3 = k;
 	if(hashM.find(-sum) != hashM.end()) {
-	  if(isSolution(hashM[-sum], pos)) {
+	  if(isSolution(hashM[-sum], pos)) {	    
 	    printSolution();	    
 	    exit(0);
 	  }
