@@ -1,5 +1,5 @@
 {
-	"name": "Coin Partitions (similar to Project Euler #78)",
+	"name": "Coin Partitions",
 	"tag": "coins",
 	"weights": {
 		"dev": 3.0,

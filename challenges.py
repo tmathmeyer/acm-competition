@@ -14,14 +14,14 @@ PROJECT_DIR = os.path.split(os.path.realpath(__file__))[0]
 CHALLENGE_DIR = os.path.join(PROJECT_DIR, 'challenges2015')
 ENABLED_CHALLENGES = [
     'echo',
-    'unique',
     'factorial',
+    'rhombuses',
+    'unique',
     'factorial_large',
     'coins',
-    'coins_large',
-    'rhombuses',
     'decrypt',
-    'shop'
+    'shop',
+    'coins_large'
 ]
 
 
