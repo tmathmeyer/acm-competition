@@ -47,7 +47,6 @@ int main() {
 			int fin = (count%2==0)?(count/2+1):(-(count/2+1));
 			plzwork = fin*(3*fin-1)/2;
 		}
-		printf("%i\n", get(n));
 		n++;
 	}
 	printf("%i\n", get(n-1));
