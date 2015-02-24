@@ -75,10 +75,8 @@ int main() {
     
   for(int i = 0; i < N; ++i) {
     int x; cin >> x;
-    //    cout << x << " ";
     array.push_back(x);
   }
-  //  cout << "\n--------------------------\n";
 
   for(int i = 0; i < N-2; ++i) {
     for(int j = i + 1; j < N-1; ++j) {
@@ -102,23 +100,8 @@ int main() {
 	long long sum = (long long) array[i] + array[j] + array[k];
 	hashstruct pos; pos.pos1 = i; pos.pos2 = j; pos.pos3 = k;
 	if(hashM.find(-sum) != hashM.end()) {
-	  //cout << "sum:" << sum << " -> " << "i,j,k:"
-	  //    << i << " " << j << " " << k << '\n';
-	  //printVector(hashM[-sum]); // debug purpose
 	  if(isSolution(hashM[-sum], pos)) {
-	    //cout << "pos1,2,3:" << pos.pos1 << " "
-	    //     << pos.pos2 << " " << pos.pos3 << '\n';
-	    
-
-	    //cout << "------solution here:";
-	    for(int i = 0; i < K; ++i) {
-	      cout << array[solutionArr[i]] << "->";
-	      printBits(array[solutionArr[i]]);
-	      cout << "  ";
-	    }
-	    cout << '\n';
-	    printSolution();
-	    
+	    printSolution();	    
 	    exit(0);
 	  }
 	}

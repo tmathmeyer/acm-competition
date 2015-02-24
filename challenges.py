@@ -18,7 +18,8 @@ ENABLED_CHALLENGES = [
     'factorial',
     'coins',
     'rhombuses',
-    'decrypt'
+    'decrypt',
+    'shop'
 ]
 
 
