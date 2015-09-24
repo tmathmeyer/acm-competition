@@ -11,7 +11,7 @@ from dateutil.tz import tzutc
 
 EPOCH = datetime(1970, 1, 1, tzinfo=tzutc())
 PROJECT_DIR = os.path.split(os.path.realpath(__file__))[0]
-CHALLENGE_DIR = os.path.join(PROJECT_DIR, 'challenges2015')
+CHALLENGE_DIR = os.path.join(PROJECT_DIR, 'challenges2015_10')
 ENABLED_CHALLENGES = [
     'echo',
     'factorial',
