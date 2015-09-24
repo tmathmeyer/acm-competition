@@ -1,0 +1,30 @@
+{
+	"name": "Harshad",
+	"tag": "series",
+	"weights": {
+		"dev": 0.1,
+		"spd": 0.0,
+		"mem": 0.0
+	},
+	"description": "<p>A Harshad number is a number that is divisible by the sum of it's digits. For a given input N, find the sum of all harshad numbers less than or equal to N</p>",
+	"sample": {
+		"test_cases": [
+			"10",
+			"12"
+		],
+		"solutions": [
+			"55",
+			"67"
+		]
+	},
+	"official": {
+		"test_cases": [
+			"123",
+			"12345"
+		],
+		"solutions": [
+			"2116",
+			"11569625"
+		]
+	}
+}
