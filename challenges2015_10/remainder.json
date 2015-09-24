@@ -1,0 +1,32 @@
+{
+	"name": "Division / Remainder",
+	"tag": "remainder",
+	"weights": {
+		"dev": 1.0,
+		"spd": 3.0,
+		"mem": 3.0
+	},
+	"description": "<p>(x^5 + 1)/(x^2 + 1) is (x^3 - x) remainder (x+1). (x^5 + 1) can be represented as 100001b, or 33 in decimal. (x^2 + 1) can be represented as 101b, or 5 in decimal. their remainder can be represented as 11b, or 3 in decimal. Using this representation of numbers, calculate the remainder of N / M, where N and M are two numbers given in decimal, separated by a space</p>",
+	"sample": {
+		"test_cases": [
+			"33 5",
+			"393 18"
+		],
+		"solutions": [
+			"3",
+			"15"
+		]
+	},
+	"official": {
+		"test_cases": [
+			"123 23",
+			"425349 143",
+            "18273612 28523"
+		],
+		"solutions": [
+			"9",
+			"119",
+            "4765"
+		]
+	}
+}
