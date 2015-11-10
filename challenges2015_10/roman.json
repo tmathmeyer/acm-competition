@@ -1,0 +1,48 @@
+{
+	"name": "Roman Numerals",
+	"tag": "roman",
+	"weights": {
+		"dev": 3.0,
+		"spd": 0.0,
+		"mem": 5.0
+	},
+	"description": "<p>The Roman Numeral system sucks. That's why you're going to have to parse it! In this problem, you will have to create a program that reads roman numerals from standard in and prints their corresponding arabic numeral. However, in the case that the input is malformed, you must print the first character where that malformation becomes obvious. Example: LX is the roman numeral for 60, but LXL is not a valid Roman Numeral. The valid way to write 90 is XC.</p>",
+	"sample": {
+		"test_cases": [
+			"III",
+            "VIV",
+            "IX",
+            "LXL"
+		],
+		"solutions": [
+			"3",
+            "V",
+            "9",
+            "L"
+		]
+	},
+	"official": {
+		"test_cases": [
+            "IL",
+            "XLIV",
+            "MMM",
+            "MCD",
+            "MMMCDXLIV",
+            "VIV",
+            "IC",
+            "XM",
+            "MDCLXVI"
+		],
+		"solutions": [
+            "L",
+            "44",
+            "3000",
+            "1400",
+            "3444",
+            "V",
+            "C",
+            "M",
+            "1666"
+		]
+	}
+}

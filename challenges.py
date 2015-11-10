@@ -18,7 +18,8 @@ ENABLED_CHALLENGES = [
     'parens1',
     'parens2',
     'remainder',
-    'series'
+    'series',
+    'roman'
 ]
 
 
